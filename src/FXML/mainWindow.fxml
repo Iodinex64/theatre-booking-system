@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainWindowController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="loadData" mnemonicParsing="false" onAction="#LoadData" text="Load Data" />
+                  <MenuItem fx:id="saveData" mnemonicParsing="false" onAction="#SaveData" text="Save Data" />
+                  <MenuItem fx:id="resetData" mnemonicParsing="false" onAction="#ResetData" text="Reset Data" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem fx:id="viewShows" mnemonicParsing="false" onAction="#OpenDatabaseWindow" text="View Database" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <FlowPane layoutX="125.0" layoutY="27.0" prefHeight="345.0" prefWidth="350.0">
+         <children>
+            <Button fx:id="addShowButton" alignment="CENTER" mnemonicParsing="false" onAction="#OpenAddShowWindow" prefHeight="69.0" prefWidth="350.0" text="Add A Show" textAlignment="CENTER">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets top="12.0" />
+               </FlowPane.margin></Button>
+            <Button fx:id="addPerformanceButton" alignment="CENTER" layoutX="10.0" layoutY="105.0" mnemonicParsing="false" onAction="#OpenAddPerformanceWindow" prefHeight="69.0" prefWidth="350.0" text="Add A Performance" textAlignment="CENTER">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets top="20.0" />
+               </FlowPane.margin></Button>
+            <Button fx:id="addBookingButton" alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#OpenAddBooking_1Window" prefHeight="69.0" prefWidth="350.0" text="Add A Booking" textAlignment="CENTER">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets top="20.0" />
+               </FlowPane.margin></Button>
+            <Button fx:id="cancellationButton" alignment="CENTER" layoutX="10.0" layoutY="200.0" mnemonicParsing="false" onAction="#OpenCancellationsWindow" prefHeight="69.0" prefWidth="350.0" text="Make A Cancellation" textAlignment="CENTER">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets top="20.0" />
+               </FlowPane.margin></Button>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="JavaFX">
+    <CLASSES>
+      <root url="file://C:/Program Files/Java/javafx-sdk-11.0.2/lib" />
+      <root url="jar://C:/Program Files/Java/xstream-1.4.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://C:/Program Files/Java/javafx-sdk-11.0.2/lib" />
+    </SOURCES>
+    <jarDirectory url="file://C:/Program Files/Java/javafx-sdk-11.0.2/lib" recursive="false" />
+    <jarDirectory url="file://C:/Program Files/Java/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>
